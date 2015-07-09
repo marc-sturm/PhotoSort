@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/Icon.png</file>
+        <file>Icons/Delete.png</file>
+        <file>Icons/Left.png</file>
+        <file>Icons/Right.png</file>
+        <file>Icons/RotateLeft.png</file>
+        <file>Icons/RotateRight.png</file>
+    </qresource>
+</RCC>
