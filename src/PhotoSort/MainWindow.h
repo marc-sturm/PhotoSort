@@ -40,6 +40,7 @@ public slots:
 	void on_actionRotateRight_triggered(bool);
 	void on_actionDelete_triggered(bool);
 	void on_actionRename_triggered(bool);
+	void on_actionDuplicates_triggered(bool);
 	void on_actionResize_triggered(bool);
 	void on_actionBlackWhite_triggered(bool);
 	void on_actionPrint_triggered(bool);

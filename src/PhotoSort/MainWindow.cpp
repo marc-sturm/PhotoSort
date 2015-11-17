@@ -7,6 +7,7 @@
 #include <QDebug>
 #include <QDateTime>
 #include "ResizeDialog.h"
+#include "DuplicateDialog.h"
 #include <fstream>
 #include <QPrintPreviewDialog>
 #include <QPainter>
@@ -175,6 +176,18 @@ void MainWindow::on_actionRename_triggered(bool)
 
 	updateImageList(folder);
 	updateImage(0);
+}
+
+void MainWindow::on_actionDuplicates_triggered(bool)
+{
+	DuplicateDialog dlg(this);
+
+	//set folder
+	QString folder = QApplication::applicationDirPath();
+	if (images_.count()!=0) folder = images_[current_].folder();
+	dlg.setFolder(folder);
+
+	dlg.exec();
 }
 
 void MainWindow::on_actionResize_triggered(bool)

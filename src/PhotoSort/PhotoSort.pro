@@ -14,15 +14,18 @@ SOURCES += main.cpp\
         MainWindow.cpp \
     ImageWorker.cpp \
     ResizeDialog.cpp \
-    Image.cpp
+    Image.cpp \
+    DuplicateDialog.cpp
 
 HEADERS  += MainWindow.h \
     ImageWorker.h \
     ResizeDialog.h \
-    Image.h
+    Image.h \
+    DuplicateDialog.h
 
 FORMS    += MainWindow.ui \
-    ResizeDialog.ui
+    ResizeDialog.ui \
+    DuplicateDialog.ui
 
 #include cppCORE library
 INCLUDEPATH += $$PWD/../../src/cppCORE

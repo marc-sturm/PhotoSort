@@ -124,6 +124,7 @@
     <addaction name="actionOpenFolder"/>
     <addaction name="separator"/>
     <addaction name="actionRename"/>
+    <addaction name="actionDuplicates"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -335,6 +336,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionDuplicates">
+   <property name="text">
+    <string>Find duplicates</string>
    </property>
   </action>
  </widget>
