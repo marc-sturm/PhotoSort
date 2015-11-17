@@ -300,7 +300,7 @@
   </action>
   <action name="actionBlackWhite">
    <property name="text">
-    <string>black and white</string>
+    <string>Black and white</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+B</string>

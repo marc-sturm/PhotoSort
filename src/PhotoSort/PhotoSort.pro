@@ -4,6 +4,9 @@
 #
 #-------------------------------------------------
 
+#c++11 support
+CONFIG += c++11
+
 QT       +=  core widgets gui printsupport
 
 TARGET = PhotoSort
@@ -15,17 +18,22 @@ SOURCES += main.cpp\
     ImageWorker.cpp \
     ResizeDialog.cpp \
     Image.cpp \
-    DuplicateDialog.cpp
+    DuplicateDialog.cpp \
+    FingerPrintWorker.cpp \
+    DuplicatePairDialog.cpp
 
 HEADERS  += MainWindow.h \
     ImageWorker.h \
     ResizeDialog.h \
     Image.h \
-    DuplicateDialog.h
+    DuplicateDialog.h \
+    FingerPrintWorker.h \
+    DuplicatePairDialog.h
 
 FORMS    += MainWindow.ui \
     ResizeDialog.ui \
-    DuplicateDialog.ui
+    DuplicateDialog.ui \
+    DuplicatePairDialog.ui
 
 #include cppCORE library
 INCLUDEPATH += $$PWD/../../src/cppCORE
