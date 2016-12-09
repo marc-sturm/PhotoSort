@@ -35,9 +35,7 @@ void DuplicateDialog::search()
 	QStringList files;
 	foreach(QString filter, filters)
 	{
-		QStringList tmp;
-		Helper::findFiles(ui->folder->text(), filter, tmp);
-		files << tmp;
+		files << Helper::findFiles(ui->folder->text(), filter, false);
 	}
 
 	//start worker
